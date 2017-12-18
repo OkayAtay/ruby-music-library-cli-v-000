@@ -73,7 +73,7 @@ class MusicLibraryController
     binding.pry
     puts "Which song number would you like to play?"
     user_input = gets.strip
-    Sorted_list = Song.all.uniq.sort{ |a, b| a.name <=> b.name }
+    sorted_list = Song.all.uniq.sort{ |a, b| a.name <=> b.name }
   end
 
 end

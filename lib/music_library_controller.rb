@@ -76,7 +76,8 @@ class MusicLibraryController
     sorted_list = Song.all.uniq.sort{ |a, b| a.name <=> b.name }
     if song = sorted_list[user_input-1]
       then
-    puts "Playing #{song.name} by #{song.artist.name}"
+      puts "Playing #{song.name} by #{song.artist.name}"
+    end
   end
 
 end

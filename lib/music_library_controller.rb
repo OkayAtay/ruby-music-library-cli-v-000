@@ -71,7 +71,7 @@ class MusicLibraryController
     #select song from song list
     #puts playing 'song name' by 'song artist'
     puts "Which song number would you like to play?"
-    user_input = gets.strip
+    user_input = gets.strip.to_i
     sorted_list = Song.all.uniq.sort{ |a, b| a.name <=> b.name }
     binding.pry
     puts

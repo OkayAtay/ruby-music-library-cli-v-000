@@ -74,7 +74,6 @@ class MusicLibraryController
     user_input = gets.strip
     binding.pry
     Sorted_list = Song.all.uniq.sort{ |a, b| a.name <=> b.name }.each.with_index(1)
-
     puts "Playing #{} by #{}"
   end
 

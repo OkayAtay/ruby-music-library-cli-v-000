@@ -74,7 +74,6 @@ class MusicLibraryController
     user_input = gets.strip.to_i
     sorted_list = Song.all.uniq.sort{ |a, b| a.name <=> b.name }
     song = sorted_list[user_input-1]
-    binding.pry
     puts "Playing #{song.name} by #{song.artist.name}"
   end
 
